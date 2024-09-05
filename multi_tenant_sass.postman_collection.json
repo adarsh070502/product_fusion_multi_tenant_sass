@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "37cb3377-8195-4f91-bd43-82ffb49251fa",
+		"name": "multi_tenant_sass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29422047"
+	},
+	"item": [
+		{
+			"name": "Organization_wise_number_of_members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/Organization_wise_number_of_members?start_time=4-9-2024&end_time=6-9-2024",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Organization_wise_number_of_members"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "4-9-2024"
+						},
+						{
+							"key": "end_time",
+							"value": "6-9-2024"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Organisation_wise_role_wise_number_of_users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/Organisation_wise_role_wise_number_of_users?start_time=4-9-2024&end_time=6-9-2024",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Organisation_wise_role_wise_number_of_users"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "4-9-2024"
+						},
+						{
+							"key": "end_time",
+							"value": "6-9-2024"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
