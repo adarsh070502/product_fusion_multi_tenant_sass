@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/update_member_role.css')}}"
+    />
+    <title>Update Member Role</title>
+</head>
+<body>
+
+<h1 class="header">Update Member Role</h1>
+
+<div>
+        <form action="{{ url_for('update_member_role') }}" method="POST">
+        <label for="email">Email</label>
+        <input type="email" name="email" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" required><br><br>
+            <label for="new_role">New Role</label>
+        <input type="text" name="new_role" required><br><br>
+        <label for="description">Description</label>
+        <input type="text" name="description" required><br><br>
+        <button style="display: block; margin: 10px auto; width: auto;">Update Role</button>
+        </form>
+
+    </div>
+    <div>
+        <button><a href="{{ url_for('index') }}">Home</a></button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #1e90ff;
+}
+
+body{
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Login-header{
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
+label{
+    font-size: 20px;
+    display: inline-block; /* Align label and input on the same line */
+    width: 100px; /* Set the width of the labels */
+    text-align: right; /* Align text to the right */
+    margin-right: 30px; /* Add space between label and input */
+}
+
+input {
+  border-width: 0px 0px 2px 0px;
+  height: 40px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button{
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
